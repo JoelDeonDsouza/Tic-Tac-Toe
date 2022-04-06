@@ -2,8 +2,8 @@ import "./board.css";
 import Square from "../Square/square";
 
 const Board = () => {
-  const renderSquare = () => {
-    return <Square />;
+  const renderSquare = (i) => {
+    return <Square value={i} />;
   };
   return (
     <div className="board">
