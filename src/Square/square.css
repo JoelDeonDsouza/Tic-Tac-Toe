@@ -1,10 +1,14 @@
 .square {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #3a3845;
   color: #00ffc6;
   border: 1px solid #4d77ff;
   padding: 0;
   font-size: 85px;
   text-align: center;
+}
+.square:focus {
+  outline: none;
+  background-color: #8d8daa;
 }

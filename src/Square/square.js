@@ -1,7 +1,14 @@
 import "./square.css";
 
 const Square = (props) => {
-  return <div className="square">{props.value}</div>;
+  return (
+    <button
+      onClick={() => alert(`square ${props.value} clicked`)}
+      className="square"
+    >
+      {props.value}
+    </button>
+  );
 };
 
 export default Square;

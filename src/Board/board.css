@@ -1,9 +1,11 @@
 .board {
-  background-color: #9900f0;
+  background-color: #525e75;
   margin: 10;
   padding: 20;
 }
 .broadRow {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
