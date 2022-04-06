@@ -4,4 +4,10 @@ body {
   margin: 20px;
   font-size: xx-large;
   font-family: "Rubik Moonrocks", cursive;
+  text-align: center;
+}
+.gameBoard {
+  background-color: #00092c;
+  margin: 10;
+  padding: 20;
 }
