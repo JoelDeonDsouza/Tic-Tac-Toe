@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Game from "./Game/game";
+import Game from "./Components/Game/game";
 
 ReactDOM.render(
   <React.StrictMode>
