@@ -1,11 +1,10 @@
+import { useState } from "react";
 import "./square.css";
 
 const Square = (props) => {
+  // const [value, setValue] = useState(null);
   return (
-    <button
-      onClick={() => alert(`square ${props.value} clicked`)}
-      className="square"
-    >
+    <button onClick={() => {}} className="square">
       {props.value}
     </button>
   );

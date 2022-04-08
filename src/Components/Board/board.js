@@ -1,9 +1,22 @@
 import "./board.css";
 import Square from "../Square/square";
+import { useState } from "react";
 
 const Board = () => {
+  const initicialSquare = [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ];
+  const [squares, setSquares] = useState(initicialSquare);
   const renderSquare = (i) => {
-    return <Square value={i} />;
+    return <Square />;
   };
   return (
     <div className="board">
