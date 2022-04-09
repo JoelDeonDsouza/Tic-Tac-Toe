@@ -7,9 +7,10 @@ const Board = () => {
   const [squares, setSquares] = useState(initicialSquare);
 
   const handleClickEvent = (i) => {
-    const newSquare = [...squares];
-    newSquare[i] = "X";
-    setSquares(newSquare);
+    // const newSquare = [...squares];
+    // newSquare[i] = "X";
+    // setSquares(newSquare);
+    alert(`key ${i} is pressed`);
   };
 
   const renderSquare = (i) => {
@@ -19,19 +20,19 @@ const Board = () => {
     <div className="board">
       Board
       <div className="broadRow">
-        {renderSquare()}
-        {renderSquare()}
-        {renderSquare()}
+        {renderSquare(0)}
+        {renderSquare(1)}
+        {renderSquare(2)}
       </div>
       <div className="broadRow">
-        {renderSquare()}
-        {renderSquare()}
-        {renderSquare()}
+        {renderSquare(3)}
+        {renderSquare(4)}
+        {renderSquare(5)}
       </div>
       <div className="broadRow">
-        {renderSquare()}
-        {renderSquare()}
-        {renderSquare()}
+        {renderSquare(6)}
+        {renderSquare(7)}
+        {renderSquare(8)}
       </div>
     </div>
   );
