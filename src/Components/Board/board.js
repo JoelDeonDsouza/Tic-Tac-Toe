@@ -1,6 +1,7 @@
 import "./board.css";
 import Square from "../Square/square";
 import { useState } from "react";
+import CalculateWinner from "../gameLogic";
 
 const Board = () => {
   const initicialSquare = Array(9).fill(null);
@@ -20,9 +21,14 @@ const Board = () => {
       <Square value={squares[i]} onClickEvent={() => handleClickEvent(i)} />
     );
   };
+
+  const winner = CalculateWinner(squares);
+  const status = winner
+    ? `Winner: ${winner}`
+    : `Next player is: ${xIsNext ? "X" : "O"}`;
   return (
     <div className="board">
-      Board
+      <h2>{status}</h2>
       <div className="broadRow">
         {renderSquare(0)}
         {renderSquare(1)}
