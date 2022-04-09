@@ -5,16 +5,20 @@ import { useState } from "react";
 const Board = () => {
   const initicialSquare = Array(9).fill(null);
   const [squares, setSquares] = useState(initicialSquare);
+  const [xIsNext, setXIsNext] = useState(true);
 
   const handleClickEvent = (i) => {
-    // const newSquare = [...squares];
-    // newSquare[i] = "X";
-    // setSquares(newSquare);
-    alert(`key ${i} is pressed`);
+    const newSquare = [...squares];
+    newSquare[i] = xIsNext ? "X" : "O";
+    setSquares(newSquare);
+    setXIsNext(!xIsNext);
+    // alert(`key ${i} is pressed`);
   };
 
   const renderSquare = (i) => {
-    return <Square value={squares} onClickEvent={() => handleClickEvent(i)} />;
+    return (
+      <Square value={squares[i]} onClickEvent={() => handleClickEvent(i)} />
+    );
   };
   return (
     <div className="board">
