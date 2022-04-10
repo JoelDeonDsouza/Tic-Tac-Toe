@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-**Client:** React/JavaScript.
+**Full-Stack:** React/JavaScript.
 
 ## Deployment
 
